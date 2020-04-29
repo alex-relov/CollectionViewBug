@@ -17,5 +17,10 @@ namespace CollectionViewBug
         {
             InitializeComponent();
         }
+
+        private void LoadMore(object sender, EventArgs e)
+        {
+
+        }
     }
 }

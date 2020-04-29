@@ -28,6 +28,7 @@ namespace CollectionViewBug.ViewModels
             InsertData();
             UpdateItems = new Command(() =>
             {
+        
                 Items.Clear();
                 InsertData();
             });
@@ -39,7 +40,7 @@ namespace CollectionViewBug.ViewModels
 
             foreach (var group in grouped)
             {
-                Items.Add(new Grouping<string, ItemModel>(group.Key,group));
+                Items.Add(new Grouping<string, ItemModel>(group.Key, group));
             }
         }
 

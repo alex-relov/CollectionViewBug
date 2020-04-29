@@ -13,7 +13,7 @@
 
     <StackLayout>
         <Button Text="Clear and add" Command="{Binding UpdateItems}" />
-        <CollectionView ItemsSource="{Binding Items}" IsGrouped="True">
+        <CollectionView RemainingItemsThresholdReached="LoadMore" ItemsSource="{Binding Items}" RemainingItemsThreshold="0" IsGrouped="True">
 
             <CollectionView.GroupHeaderTemplate>
                 <DataTemplate>
